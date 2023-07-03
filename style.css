@@ -1,0 +1,530 @@
+/* Image Slider */
+.image-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 118rem;
+  margin: 0 auto;
+}
+
+.gp-description {
+  box-shadow: -10px -10px 15px 5px rgba(124, 124, 124, 0.2);
+  /* width: 59rem; */
+  width: 50%;
+  height: 44rem;
+  overflow-y: scroll;
+  border-radius: 10px 0 0 10px;
+}
+
+.gp-description p {
+  font-size: 2.6rem;
+  text-align: justify;
+  padding: 10px;
+}
+.image-slider {
+  /* width: 59rem; */
+  width: 50%;
+  height: 44rem;
+  margin: 2rem 0;
+  box-shadow: -10px -10px 15px 5px rgba(124, 124, 124, 0.2);
+  border-radius: 0 10px 10px 0;
+  overflow: hidden;
+}
+
+.image-select {
+  /* transform: translateX(-177rem); */
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-select img {
+  /* position: relative; */
+  width: 59rem;
+}
+
+.icon-arrow-left {
+  left: 50%;
+}
+.icon-arrow-right {
+  transform: translateX(-100%);
+}
+
+.dots span {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  color: aqua;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+.dots {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  /* right: 27rem; */
+  /* top: 56rem; */
+  cursor: pointer;
+  transform: translate(150%, 1500%);
+}
+
+.dots span.active {
+  background-color: aqua;
+}
+
+/* 
+Elected Body
+Pradhan, Upa-Pradhan
+ */
+
+.elected-body {
+  margin: 10rem auto;
+}
+
+.core-body {
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+}
+
+.pradhan,
+.upa-pradhan {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border-radius: 10px;
+  box-shadow: -10px -10px 20px 10px rgba(139, 139, 139, 0.2);
+}
+
+.pradhan:hover,
+.upa-pradhan:hover {
+  transform: scale(1.05);
+  box-shadow: -10px -10px 40px 10px rgba(139, 139, 139, 0.2);
+}
+
+.position {
+  grid-column: 1/-1;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.pradhan ul,
+.upa-pradhan ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
+  gap: 10px;
+}
+
+.pradhan ul li,
+.upa-pradhan ul li {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pradhan ul li .ph,
+.upa-pradhan ul li .ph {
+  font-size: 2.4rem;
+}
+.ph-identification-badge {
+  color: #38d9a9;
+}
+.ph-map-pin-line {
+  color: #f03e3e;
+}
+.ph-house-line {
+  color: #22b8cf;
+}
+.ph-phone-call {
+  color: #37b24d;
+}
+
+.pradhan-img,
+.upa-pradhan-img {
+  width: 15.2rem;
+}
+
+.panchayat-body,
+.upa-samiti {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Panchayat Body */
+
+table {
+  width: 120rem;
+  margin-top: 100px;
+  font-size: 2rem;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 16px 24px;
+  text-align: left;
+}
+
+thead tr {
+  background-color: #339af0;
+  color: #fff;
+}
+
+thead th {
+  width: fit-content;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #d0ebff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #a5d8ff;
+}
+
+/* Upa-Samiti */
+
+.upa-samiti-member {
+  width: fit-content;
+  border-collapse: separate;
+}
+
+.upa-samiti thead tr {
+  background-color: #2f9e44;
+}
+
+.upa-samiti tbody tr:nth-child(odd) {
+  background-color: #d3f9d8;
+}
+
+.upa-samiti tbody tr:nth-child(even) {
+  background-color: #8ce99a;
+}
+
+/* Staff Details */
+
+.staff-details-img {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  /* align-items: center; */
+  /* justify-content: center; */
+  margin: 0 auto 10rem;
+  position: relative;
+}
+.staff-details-img img {
+  width: 15.2rem;
+  justify-self: center;
+  align-self: center;
+  cursor: pointer;
+}
+
+.staff-img {
+  width: 48rem;
+  border-radius: 20px;
+  grid-row: 1 / span 2;
+  /* background-color: #2f9e44; */
+}
+
+.panchayat-staff {
+  width: 105rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 280rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #f8f9fa;
+  border-radius: 20px;
+  box-shadow: 10px 10px 50px 0px rgba(109, 109, 109, 0.2);
+  z-index: 10;
+}
+
+.personal-details,
+.other-details {
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  gap: 1.5rem;
+  /* background-color: #339af0; */
+}
+
+.name {
+  font-size: 4.8rem;
+  margin-bottom: 3rem;
+}
+
+.staff-post,
+.address,
+.ph-no,
+.working-days {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ph-calendar {
+  color: #74c0fc;
+}
+
+.close-btn {
+  font-size: 6.4rem;
+  margin-left: 85%;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+/* Query Form */
+
+#form-submit {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2rem;
+  column-gap: 5rem;
+  margin: 10rem auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.full-name,
+.village,
+.phone,
+.email,
+.complaint {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.full-name,
+.village,
+.phone,
+.email,
+.complaint label {
+  font-size: 1.8rem;
+}
+
+#full-name,
+#village,
+#phone,
+#email,
+#complaint {
+  padding: 0.4rem 0.8rem;
+  width: 30rem;
+  border-radius: 05px;
+  border: 1px solid;
+}
+
+#complaint {
+  width: 50rem;
+  height: 8rem;
+  border-radius: 10px;
+  /* overflow-wrap: break-word; */
+}
+
+.complaint,
+.submit-btn {
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/-1;
+}
+
+.submit-btn {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #f8f9fa;
+  width: 10rem;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  background-color: #339af0;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 02px 2px 10px 0px #797979;
+}
+
+.submit-btn:hover {
+  background-color: #f8f9fa;
+  color: #110e0e;
+}
+
+/* Gallary */
+
+.gallary {
+  width: fit-content;
+  margin: 10rem auto;
+  position: relative;
+}
+
+.main-view {
+  margin: auto 0;
+}
+
+.main-img-jpg {
+  z-index: 10;
+  width: 60%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin: auto 0;
+}
+
+.img-close-btn {
+  z-index: 10;
+  position: absolute;
+  font-size: 3.6rem;
+  color: #e62c2c;
+  margin-left: 76%;
+}
+
+.main-gallary {
+  width: fit-content;
+  display: grid;
+  gap: 0.2rem;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.img-jpg {
+  width: 10rem;
+  height: 8rem;
+  cursor: pointer;
+}
+
+/* Navigation Bar */
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #110e0e;
+  width: 6rem;
+  height: 100%;
+  margin: 0;
+  transition: all 0.4s linear;
+}
+
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.nav-list-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-bar ul li .ph {
+  font-size: 5rem;
+  color: #de689d;
+}
+
+.logo-link {
+  text-decoration: none;
+}
+
+.nav-bar ul li span {
+  font-size: 4.2rem;
+  color: #23e7e3;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.2s linear 0.1s;
+  pointer-events: none;
+}
+
+.nav-list-item p {
+  opacity: 0;
+  pointer-events: none;
+  /* transform: translateX(200%); */
+  transform: rotate(0deg);
+  transition: opacity 0.2s linear, transform 0.2s linear;
+}
+
+.ph-caret-double-right {
+  position: fixed;
+  top: 0;
+  transform: rotate(0deg);
+  transition: all 0.4s linear;
+}
+
+.nav-list-item:first-child {
+  margin-bottom: 5rem;
+}
+
+.nav-list-item:last-child {
+  cursor: pointer;
+  position: fixed;
+  bottom: 2rem;
+}
+.nav-list-item:last-child .ph-sun-dim {
+  color: #ffcf33;
+}
+
+.nav-bar.active {
+  width: 16rem;
+}
+
+.nav-bar.active .ph-caret-double-right {
+  margin-left: 11rem;
+  transform: rotate(540deg);
+}
+
+.nav-bar.active ul li span {
+  opacity: 1;
+  transform: translateX(00%);
+}
+
+.nav-bar.active .nav-list-item p {
+  opacity: 1;
+  /* transform: translateX(-0%); */
+  transform: rotate(360deg);
+}
+
+.nav-bar.active .link {
+  pointer-events: all;
+}
+
+.nav-bar.sun .link:link,
+.nav-bar.sun .link:visited {
+  /* color: #d1603d; */
+  color: #0a0a0a;
+}
+
+.nav-bar.sun .link:hover,
+.nav-bar.sun .link:active {
+  color: #f5008f;
+}
+
+.nav-bar.active ul li:last-child {
+  margin-top: 15rem;
+  margin-top: 95%;
+}
+
+.nav-bar.sun {
+  background-color: #e4eff7;
+}
+.nav-bar.sun ul li .ph {
+  /* color: #ffd700; */
+  color: #f95738;
+}
+.nav-bar.sun ul li:last-child .ph-moon {
+  color: #de689d;
+}
+.nav-bar.sun ul li a {
+  color: #0a0a0a;
+}
+.nav-bar.sun ul span {
+  color: #22b8cf;
+}

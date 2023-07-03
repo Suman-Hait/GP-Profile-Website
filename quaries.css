@@ -1,0 +1,239 @@
+/* 
+Below 1300px 
+*/
+
+@media (max-width: 82em) {
+  html {
+    font-size: 56.25%;
+  }
+  .dots {
+    transform: translate(135%, 1430%);
+  }
+  .panchayat-staff {
+    top: 306rem;
+  }
+}
+
+/* 
+Below 1150px 
+*/
+
+@media (max-width: 72em) {
+  html {
+    font-size: 50%;
+  }
+  .image-carousel {
+    width: 100rem;
+  }
+  .dots {
+    transform: translate(110%, 1400%);
+  }
+  .core-body {
+    gap: 5rem;
+  }
+  .panchayat-body {
+    width: 90rem;
+    margin: 0 auto;
+  }
+  .pradhan,
+  .upa-pradhan {
+    width: 50rem;
+  }
+  .panchayat-staff {
+    top: 383rem;
+  }
+}
+
+/* 
+Below 880px 
+*/
+
+@media (max-width: 55em) {
+  html {
+    font-size: 43.75%;
+  }
+  .image-carousel {
+    width: 90rem;
+    margin: 0 auto 0 auto;
+  }
+  .dots {
+    transform: translate(95%, 1350%);
+  }
+  .pradhan,
+  .upa-pradhan {
+    width: 40rem;
+  }
+  .panchayat-body {
+    width: 80rem;
+  }
+  .staff-details-img img {
+    width: 13.2rem;
+  }
+  .img-jpg {
+    width: 8rem;
+    height: 6.4rem;
+  }
+  .nav-list-item:first-child {
+    margin-bottom: 3rem;
+  }
+}
+
+/* 
+Below 688px 
+*/
+
+@media (max-width: 43em) {
+  html {
+    font-size: 37.5%;
+  }
+  .image-carousel {
+    width: 80rem;
+  }
+  .dots {
+    transform: translate(80%, 1250%);
+  }
+  .nav-bar {
+    position: sticky;
+    bottom: 0;
+    height: 6rem;
+    width: 100%;
+  }
+  .nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .nav-bar ul li:first-child {
+    display: none;
+  }
+  .nav-list-item .link {
+    display: none;
+  }
+  .nav-list-item:last-child {
+    position: relative;
+    bottom: auto;
+  }
+  .sex,
+  .caste {
+    display: none;
+  }
+  .panchayat-staff {
+    top: 455rem;
+    width: 80rem;
+  }
+  .upa-samiti {
+    width: 75rem;
+    margin: 0 auto;
+  }
+  .staff-img {
+    width: 40rem;
+  }
+  .personal-details,
+  .other-details {
+    font-size: 2.4rem;
+    gap: 1rem;
+  }
+  .name {
+    font-size: 3.6rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* 
+Below 520px 
+*/
+@media (max-width: 32.5em) {
+  .image-carousel {
+    flex-direction: column;
+    width: 58rem;
+    margin: 5rem auto;
+  }
+  .gp-description,
+  .image-slider {
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 10px -10px 15px 5px rgba(124, 124, 124, 0.3);
+  }
+  .icon-arrow-left {
+    transform: translate(-470%, -450%);
+  }
+  .icon-arrow-right {
+    transform: translate(370%, -450%);
+  }
+  .dots {
+    transform: translate(0%, 75%);
+  }
+  .core-body {
+    flex-direction: column;
+  }
+  .pradhan,
+  .upa-pradhan {
+    margin: 0 auto;
+    width: 55rem;
+  }
+  .pradhan ul li,
+  .upa-pradhan ul li {
+    font-size: 3rem;
+  }
+  .pradhan ul li .ph,
+  .upa-pradhan ul li .ph {
+    font-size: 3.6rem;
+  }
+  .ph-hash {
+    font-size: 4rem;
+  }
+  .pradhan h3,
+  .upa-pradhan h3 {
+    font-size: 4.2rem;
+  }
+  .pradhan-img,
+  .upa-pradhan-img {
+    width: 21rem;
+  }
+  .sansad-no {
+    display: none;
+  }
+  .panchayat-body {
+    width: 40rem;
+  }
+  table {
+    font-size: 1.6rem;
+  }
+  .staff-details-img {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .upa-samiti {
+    width: 50rem;
+  }
+  .upa-samiti table {
+    font-size: 2.4rem;
+  }
+  #form-submit {
+    grid-template-columns: 1fr;
+  }
+  .main-gallary {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .panchayat-staff {
+    top: 514rem;
+    width: 58rem;
+  }
+  .staff-img {
+    width: 25rem;
+  }
+  .personal-details,
+  .other-details {
+    font-size: 1.8rem;
+    gap: 1rem;
+  }
+  .name {
+    font-size: 2.6rem;
+    margin-bottom: 1.5rem;
+  }
+  .panchayat-staff .ph {
+    font-size: 3rem;
+  }
+  .close-btn {
+    font-size: 2.4rem;
+  }
+}
