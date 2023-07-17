@@ -1,7 +1,6 @@
 "use strict";
 
 // IMAGE SLIDER
-
 const imageSelectEl = document.querySelectorAll(".image-select img");
 const leftArrow = document.querySelector(".icon-arrow-left");
 const rightArrow = document.querySelector(".icon-arrow-right");
@@ -194,7 +193,6 @@ for (let i = 0; i < panchayatImg.length; i++) {
 }
 
 // GALLERY IMAGE VIEWER
-
 const mainView = document.querySelector(".main-view");
 
 const imgClose = function () {
@@ -221,6 +219,7 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
+//NAVIGATION BAR
 const navBarEl = document.querySelector(".nav-bar");
 const dblRight = document.querySelector(".ph-caret-double-right");
 const overlay2 = document.querySelector(".overlay2");
@@ -250,6 +249,7 @@ darkTheme.addEventListener("click", () => {
   brightTheme.classList.remove("hidden");
 });
 
+//WORD COUNT
 function countWord() {
   const complaint = document.getElementById("complaint");
   const regex = /\s+/g;
