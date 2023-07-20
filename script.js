@@ -11,14 +11,14 @@ let timeout;
 
 rightArrow.addEventListener("click", () => {
   i++;
-  console.log(i);
+  // console.log(i);
   clearTimeout(timeout);
   updateImg();
 });
 
 leftArrow.addEventListener("click", () => {
   i--;
-  console.log(i);
+  // console.log(i);
   clearTimeout(timeout);
   updateImg();
 });
@@ -49,7 +49,7 @@ for (let j = 0; j < imgDotEl.length; j++) {
   imgDotEl[j].addEventListener("click", () => {
     i === j;
     // i++;
-    console.log(i);
+    // console.log(i);
     clearTimeout(timeout);
     updateImg();
   });
@@ -170,7 +170,7 @@ const panchayatImg = document.querySelectorAll(".staff-details-img img");
 
 for (let i = 0; i < panchayatImg.length; i++) {
   panchayatImg[i].addEventListener("click", () => {
-    console.log(i);
+    // console.log(i);
     panchayatStaff[i].classList.remove("hidden");
     overlay.classList.remove("hidden");
     // document.querySelector("body").style.backdropFilter = "blur(5px)";
